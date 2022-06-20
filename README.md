@@ -1,24 +1,3 @@
-# README
+# Turbo Rails Tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+In this tutorial, we will build a single-page, reactive quote editor with only a single line of custom JavaScript for the flash message animation. In this tutorial we will follow step by step the turbo rails tutorial which we can find here: [Turbo Rails Tutorial](https://www.hotrails.dev/turbo-rails). The tutorial was written by Alexandre Ruban.
