@@ -7,6 +7,7 @@ class QuotesTest < ApplicationSystemTestCase
   #   assert_selector "h1", text: "Quotes"
   # end
   setup do
+    login_as users(:accountant)
     #@quote = quotes(:first) # Reference to the first fixture quote
     # We need to order quote as well in the system tests
     @quote = Quote.ordered.first
