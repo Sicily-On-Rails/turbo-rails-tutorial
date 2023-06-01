@@ -7,7 +7,9 @@ class QuotesTest < ApplicationSystemTestCase
   #   assert_selector "h1", text: "Quotes"
   # end
   setup do
-    @quote = quotes(:first) # Reference to the first fixture quote
+    #@quote = quotes(:first) # Reference to the first fixture quote
+    # We need to order quote as well in the system tests
+    @quote = Quote.ordered.first
   end
 
  
@@ -41,7 +43,7 @@ class QuotesTest < ApplicationSystemTestCase
     assert_selector "h1", text: "Quotes"
 
     click_on "Edit", match: :first
-    fill_in "Name", text: "Updated quote"
+    fill_in "Name", with: "Updated quote"
 
     assert_selector "h1", text: "Quotes"
     click_on "Update quote"
@@ -57,4 +59,5 @@ class QuotesTest < ApplicationSystemTestCase
     click_on "Delete", match: :first
     assert_no_text @quote.name
   end
+  
 end
